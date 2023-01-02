@@ -62,3 +62,6 @@ despesas = 3967
 
 meta = saldo > 0 and salario - despesas >= 0.20 * salario
 print(meta)
+
+meta_bit_a_bit = saldo > 0 & salario - despesas >= 0.20 * salario
+print(meta_bit_a_bit)
