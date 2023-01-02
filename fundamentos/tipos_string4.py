@@ -7,3 +7,6 @@ print(len(a))
 print(a.__len__())
 print("1" in a)
 print(a.__contains__('1'))
+
+
+##  
