@@ -9,3 +9,8 @@ final do mes
 '''
 
 print(salario - despesas)
+
+# print("fim")
+print("fim de verdade")  # comentário aqui tb vale
+
+ 
