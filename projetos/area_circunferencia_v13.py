@@ -3,6 +3,11 @@ from math import pi
 import sys
 import errno
 
+
+class TerminalColor:
+    ERRO = '\033[91m'
+    NORMAL = '\033[0m'
+
 # print(dir())
 # print('π =', pi)
 
@@ -12,7 +17,7 @@ def circulo(raio):
 
 
 def help():
-    script = sys.argv[0][2:]
+    script = sys.argv[0][40:]
     print('É necessário informar raio do circulo')
     print(f'Sintaxe: {script} <raio>')
 
@@ -24,7 +29,9 @@ if __name__ == '__main__':
             sys.exit(errno.EPERM)
         elif not sys.argv[1].isnumeric():
             help()
-            print('O Raio deve ser um valor numérico')
+            print(TerminalColor.ERRO +
+                  'O Raio deve ser um valor numérico' + 
+                  TerminalColor.NORMAL)
         else:
             raio = sys.argv[1]
             area = circulo(raio)
