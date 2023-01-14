@@ -3,7 +3,7 @@
 dobros = [i * 2 for i in range(10)]
 print(dobros)
 
-# versao normal 
+# versao normal sem list comprehension
 dobros = [] 
 
 for i in range(10):
