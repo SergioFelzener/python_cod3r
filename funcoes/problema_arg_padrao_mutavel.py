@@ -11,3 +11,7 @@ if __name__ == '__main__':
     print(fibonacci(inicio))
     restart = fibonacci()
     print(restart, id(restart))
+    try:    
+        assert restart == [0, 1, 1]
+    except Exception as error:
+        print('error : ', error)
