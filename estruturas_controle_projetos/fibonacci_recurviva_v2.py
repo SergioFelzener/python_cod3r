@@ -7,7 +7,7 @@ def fibonnaci(quantidade, sequencia=(0,1)):
 
 if __name__ == '__main__':
     # Listar os 20 primeiro números da sequencia de fibonacci
-    for fib in fibonnaci(20):
+    for fib in fibonnaci(200):
         print(fib)
 
 
