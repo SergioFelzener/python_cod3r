@@ -2,10 +2,10 @@
 import sys
 
 def calc_pintura(area):
-    quantidade_tinta = area / 3
-    quantidade_latas = quantidade_tinta / 18
-    quantidade_latas = int(quantidade_latas) + 1
-    preco_total = quantidade_latas * 80.00
+    qntd_tinta = area / 3
+    qntd_latas = qntd_tinta / 18
+    qntd_latas = int(qntd_latas) + 1
+    total = qntd_latas * 80.00
 
     return (qntd_latas, total)
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-class Carro:
+class Carro():
     pass
   
     
