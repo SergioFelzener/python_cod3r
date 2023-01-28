@@ -6,19 +6,21 @@ class Pokemon:
         self.magic = magic
         
     def __str__(self):
-        return f'Pokemon {self.especie, self.tipo, self.power}'
-        # return 'Especie :{}\nTipo :{}\nPower = {}'.format(self.especie, self.tipo, self.power)
+        # return f'Pokemon {self.especie, self.tipo, self.power}'
+        return 'Especie : {}\nTipo : {}\nPower = {}\n'.format(self.especie, self.tipo, self.power)
         
-    def attack(self, attack=0):
-        self.attack = attack
-        if self.tipo == 'fogo':
-            self.attack = 10
-        self.power = self.power - attack
+    def attack(self, pokemon):
+        print("{}\nAtacou .....{} ".format(self, pokemon))
+        pokemon.power = pokemon.power - 10
+        print(pokemon)
+        
+        
         
         
 
 
-p1 = Pokemon('fogo', 'Chamamix')
-print(p1)
-print(p1.attack())
-print(p1.power)
+p1 = Pokemon('Fogo', 'Chamamix')
+p2 = Pokemon('Eletrico', 'Pikachu')
+p1.attack(p2)
+
+
