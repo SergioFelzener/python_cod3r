@@ -10,7 +10,8 @@ class Pokemon:
             self.name = name
         else:
             self.name = especie
-
+        
+        
     def __str__(self):
         return f'Pokemon Nome **{self.name}**\nSua espécie é : {self.especie}\nForça {self.power}\nMagia : {self.magic}\nLevel : {self.level}'
         # return 'Especie : {}\nTipo : {}\nPower = {}\n'.format(self.especie, self.tipo, self.power)
@@ -86,4 +87,6 @@ p3.choque220(p1)
 
 p4 = PokemonAgua('Torneirinha', name='TORNERA')
 print(p4)
+p4.attack(p1)
+p3.attack(p1)
 
